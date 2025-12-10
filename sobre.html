@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>AMG One</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: linear-gradient(135deg, #0a0a0a 0%, #151515 100%); border-bottom: 1px solid #222; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+      <div class="container-fluid justify-content-center position-relative">
+        <!-- Botão do menu (mobile) -->
+        <button 
+          class="navbar-toggler position-absolute start-0 ms-3 border-0" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarNavDropdown" 
+          aria-controls="navbarNavDropdown" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links centralizados -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-2 px-2">
+            <li class="nav-item">
+              <a class="nav-link px-3 py-2 rounded" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 py-2 rounded" href="sobre.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 py-2 rounded" href="parceiros.html">Parceiros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3 py-2 rounded" href="contactos.html">Contactos</a>
+            </li>
+          </ul>
+        </div>
+
+        <button id="themeToggle" 
+                class="btn btn-sm position-absolute end-0 me-3 d-none d-lg-block" 
+                style="background: rgba(30,30,30,0.7); color: #c1c1c1; border: 1px solid #333; height: 36px; width: 36px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
+          🌙
+        </button>
+      </div>
+    </nav>
+    <!-- Equipa -->
+    <div class="container my-5 animate-on-load">
+        <h2 class="text-center my-5 fw-bold">Equipa de Desenvolvimento</h2>
+        <div class="row g-4 justify-content-center">
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+            <div class="p-3">
+            <div class="bg-secondary rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem;">
+                <img src="images/tobias-moers.jpeg" 
+                  alt="Tobias Moers, Ex-CEO da AMG"
+                  class="w-100 h-100"
+                  style="object-fit: cover;">
+            </div>
+            <h5>Tobias Moers</h5>
+            <p class="text-muted">Ex-CEO da AMG<br><small>Impulsionador do projeto</small></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+            <div class="p-3">
+            <div class="bg-secondary rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem;">
+                PB
+            </div>
+            <h5>Jörg Griebel</h5>
+            <p class="text-muted">HPP – Brixworth<br><small>Adaptação F1 para estrada</small></p>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 text-center">
+            <div class="p-3">
+            <div class="bg-secondary rounded-circle mx-auto mb-3" style="width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.5rem;">
+                <img src="images/gorden-wagener.jpg" 
+                  alt="Tobias Moers, Ex-CEO da AMG"
+                  class="w-100 h-100"
+                  style="object-fit: cover;">
+            </div>
+            <h5>Gorden Wagener</h5>
+            <p class="text-muted">Design Mercedes<br><small>Diretor Criativo</small></p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Sobre o Projeto -->
+    <section class="py-5 animate-on-load">
+        <div class="container">
+            <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h1 class="text-center fw-bold mb-4 text-black">Sobre o Nosso Estudo</h1>
+                <p class="text-center text-muted mb-5">
+                Uma análise técnica ao Mercedes-AMG One: a transferência da tecnologia da Fórmula 1 para a estrada
+                </p>
+
+                <div class="hero-bg-parceiros text-white p-4 rounded-3 mb-4">
+                <p class="lead">
+                    Este projeto de investigação tem como foco a análise técnica do <strong>Mercedes-AMG One</strong>, o primeiro e único automóvel homologado para estrada do mundo a integrar <strong>tecnologia híbrida diretamente derivada da Fórmula 1</strong>. O nosso trabalho não pretende replicar o veículo, mas sim <strong>compreender, documentar e explicar</strong> os desafios de engenharia envolvidos na transferência de sistemas de competição para uso civil.
+                </p>
+
+                <p>
+                    O AMG One foi desenvolvido entre <strong>2017 e 2022</strong> por uma colaboração estreita entre a <strong>Mercedes-AMG GmbH</strong> (Affalterbach, Alemanha) e a <strong>Mercedes-AMG High Performance Powertrains (HPP)</strong> (Brixworth, Reino Unido) — a mesma unidade responsável pelos power units vencedores da Fórmula 1 entre 2014 e 2021.
+                </p>
+
+                <p>
+                    O motor central do AMG One é uma <strong>versão adaptada do power unit F1 PU106B</strong>, um 1.6L V6 turbo de 120° com injecção directa, capaz de atingir <strong>11.000 rpm</strong> — uma especificação normalmente impossível em carros de estrada devido a restrições de durabilidade, ruído e emissões. Para torná-lo viável, a equipa de engenharia teve de redesenhar completamente o sistema de escape, adicionar catalisadores pré-aquecidos, e criar um sistema de arrefecimento com <strong>nove radiadores</strong>.
+                </p>
+
+                <p>
+                    Uma das maiores conquistas técnicas foi a <strong>manutenção do MGU-H</strong> (Motor Generator Unit – Heat), um componente <strong>proibido na Fórmula 1 a partir de 2026</strong>, mas essencial para eliminar o <em>turbo lag</em> e recuperar energia dos gases de escape. O AMG One é, assim, <strong>o único carro de estrada do mundo com esta tecnologia</strong>.
+                </p>
+
+                <p>
+                    O sistema híbrido combina <strong>quatro motores eléctricos</strong>:<br>
+                    – Um no turbo (MGU-H),<br>
+                    – Um ligado ao virabrequim (MGU-K),<br>
+                    – E dois no eixo dianteiro (um por roda), permitindo tração integral 100% eléctrica em baixas velocidades.
+                </p>
+
+                <p>
+                    O resultado final é um veículo com <strong>1.063 cv</strong>, capaz de acelerar dos <strong>0 aos 100 km/h em 2,9 segundos</strong> e atingir uma velocidade máxima de <strong>352 km/h</strong>, enquanto cumpre as normas de emissões <strong>Euro 6d</strong>.
+                </p>
+
+                <p class="mb-0">
+                    Este estudo, conduzido no âmbito do nosso curso de Engenharia Automóvel, visa destacar como a <strong>inovação extrema da Fórmula 1</strong> pode inspirar soluções para a mobilidade sustentável de alto desempenho — provando que os limites da engenharia automóvel estão em constante expansão.
+                </p>
+                </div>
+
+                <div class="text-center mt-4 text-muted small">
+                <p class="mb-0">
+                    <strong>Fontes:</strong> Mercedes-AMG GmbH (2022), SAE International Papers 2023-01-0754 / 2023-01-0755, Autocar, Motor1
+                </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center text-muted w-100">
+        <div class="container">
+        <p class="mb-0">Trabalho de Investigação – Licenciatura em Engenharia Informática<br>
+            Gonçalo Oliveira e Gonçalo Pereira | ISLA Gaia | 2025</p>
+        <p class="mt-2">Informação baseada em fontes oficiais da Mercedes-AMG e publicações técnicas SAE.</p>
+        </div>
+    </footer>
+    
+    <button id="backToTopBtn" 
+        title="Voltar ao topo" 
+        style="
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #c1001a;
+          color: white;
+          border: none;
+          font-size: 18px;
+          cursor: pointer;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+          display: none;
+          z-index: 1000;
+          transition: background-color 0.3s, transform 0.2s;
+        "
+        onmouseover="this.style.backgroundColor='#e0001f'"
+        onmouseout="this.style.backgroundColor='#c1001a'"
+        onclick="scrollToTop()">
+        ↑
+    </button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

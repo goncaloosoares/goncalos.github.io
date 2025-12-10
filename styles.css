@@ -1,0 +1,165 @@
+body {
+      background: #0a0a0a;
+      color: #f8f9fa;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), 
+                  url('https://cdn.motor1.com/images/mgl/0qJ8p/s1/mercedes-amg-one-front-3-4.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1.5rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 4rem);
+      font-weight: 800;
+      background: linear-gradient(to right, #ffffff, #c1001a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      margin-bottom: 1rem;
+    }
+    .card {
+      background: #1a1a1a;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(193, 0, 26, 0.3);
+    }
+    .card-title {
+      color: #c1001a;
+    }
+    .highlight {
+      color: #c1001a;
+      font-weight: 600;
+    }
+    footer {
+      background: #000;
+      padding: 2rem 0;
+      margin-top: 3rem;
+      border-top: 1px solid #222;
+    }
+    .table thead th {
+      background-color: #c1001a;
+      color: white;
+      font-weight: 600;
+    }
+    .table td, .table th {
+      border-color: #333;
+    }
+    .section-title {
+      margin: 2rem 0;
+      font-weight: 700;
+      color: white;
+    }
+
+.animate-on-load {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.navbar-scrolled {
+  padding: 0.3rem 0 !important;
+  background-color: rgba(240, 240, 240, 0.95) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body.dark-theme {
+  background-color: #0a0a0a;
+  color: #f8f9fa;
+}
+
+body.dark-theme .card {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+body.dark-theme .table {
+  --bs-table-bg: #1a1a1a;
+  --bs-table-striped-bg: #222;
+  --bs-table-color: #f8f9fa;
+}
+
+.form-control, .form-select {
+      background-color: #1a1a1a;
+      border: 1px solid #444;
+      color: #f8f9fa;
+      font-size: 1rem;
+    }
+    .form-control:focus, .form-select:focus {
+      background-color: #1a1a1a;
+      color: #f8f9fa;
+      border-color: #c1001a;
+      box-shadow: 0 0 0 0.25rem rgba(193, 0, 26, 0.25);
+    }
+    .btn-primary {
+      background-color: #c1001a;
+      border-color: #c1001a;
+      font-size: 1.1rem;
+      padding: 0.75rem;
+    }
+    .contact-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: white;
+    }
+
+.partner-card {
+      background: #1a1a1a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      height: 100%;
+      border: 1px solid #333;
+      transition: transform 0.3s, box-shadow 0.3s;
+      color: white;
+    }
+    .partner-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(193, 0, 26, 0.2);
+    }
+    .partner-logo {
+      width: 60px;
+      height: 60px;
+      background-color: #2a2a2a;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      color: #c1001a;
+    }
+    .container {
+      color: white;
+    }
+    .hero-bg-parceiros {
+      background: #1a1a1a;
+    }
+/* Estilo personalizado para o ícone do menu (vermelho AMG) */
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(193, 0, 26, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Aumenta ligeiramente o tamanho do ícone */
+.navbar-toggler {
+  padding: 0.4rem !important;
+}
